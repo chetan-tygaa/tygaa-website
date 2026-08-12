@@ -126,7 +126,7 @@ function Approach() {
   return (
     <section className="section" id="approach" data-testid="section-approach">
       <div className="container-wide">
-        <div className="split-intro reveal" ref={headingRef}>
+        <div className="split-intro" ref={headingRef}>
           <div className="section-heading">
             <span className="eyebrow">The Tygaa approach</span>
             <h2 className="display">The inner game deserves a <em>training plan.</em></h2>
