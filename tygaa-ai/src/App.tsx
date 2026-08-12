@@ -137,7 +137,7 @@ function Approach() {
           </div>
         </div>
         <div className="three-points" data-testid="list-approach-principles">
-          <article className="point reveal reveal-delay-1" data-testid="card-approach-01">
+          <article className="point" data-testid="card-approach-01">
             <span className="point-number">01 / NOTICE</span>
             <h3>Build self-awareness</h3>
             <p>Make room for athletes to recognise patterns, emotions, and the conditions that help them do their best work.</p>
