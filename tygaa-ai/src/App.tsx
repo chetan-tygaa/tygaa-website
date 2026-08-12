@@ -98,7 +98,7 @@ function Hero() {
             </div>
             <div className="hero-note"><i /> Built for academies and school programs</div>
           </div>
-          <div className="hero-art reveal reveal-delay-2" data-testid="visual-hero-logo">
+          <div className="hero-art" data-testid="visual-hero-logo">
             <div className="orbit" aria-hidden="true" />
             <img className="logo-art" src={logoAsset} alt="Tygaa.ai prism compass logo" data-testid="img-brand-logo" />
             <div className="hero-art-label"><strong>Mind in motion</strong><span>Practice, reflect, return</span></div>
@@ -142,12 +142,12 @@ function Approach() {
             <h3>Build self-awareness</h3>
             <p>Make room for athletes to recognise patterns, emotions, and the conditions that help them do their best work.</p>
           </article>
-          <article className="point reveal reveal-delay-2" data-testid="card-approach-02">
+          <article className="point" data-testid="card-approach-02">
             <span className="point-number">02 / PRACTICE</span>
             <h3>Turn insight into habits</h3>
             <p>Short, consistent reinforcement bridges the space between a good conversation and what happens in the next session.</p>
           </article>
-          <article className="point reveal reveal-delay-3" data-testid="card-approach-03">
+          <article className="point" data-testid="card-approach-03">
             <span className="point-number">03 / RETURN</span>
             <h3>Come back to the work</h3>
             <p>Resilience is not a finish line. It is the ability to reset, learn, and step back into the moment with intention.</p>
@@ -162,14 +162,14 @@ function Model() {
   return (
     <section className="section model-section" id="ecosystem" data-testid="section-ecosystem">
       <div className="container-wide model-grid">
-        <div className="model-visual reveal" data-testid="visual-ecosystem-model">
+        <div className="model-visual" data-testid="visual-ecosystem-model">
           <div className="model-core"><span>ONE<br />SUPPORTIVE<br />LOOP</span></div>
           <div className="node node-athlete">ATHLETE</div>
           <div className="node node-coach">COACH</div>
           <div className="node node-psych">PSYCHOLOGIST</div>
           <div className="node node-family">PARENT</div>
         </div>
-        <div className="model-copy reveal reveal-delay-1">
+        <div className="model-copy">
           <span className="eyebrow">A connected environment</span>
           <h2 className="display">Nobody supports an athlete <em>alone.</em></h2>
           <p>Tygaa.ai brings the right people into the same picture, while respecting the role each person plays. The result is a more continuous kind of support — between sessions, competitions, and conversations.</p>
@@ -195,14 +195,14 @@ function HowItWorks() {
   return (
     <section className="section section-dark" id="how-it-works" data-testid="section-how-it-works">
       <div className="container-wide">
-        <div className="section-heading reveal" ref={ref}>
+        <div className="section-heading" ref={ref}>
           <span className="eyebrow">How it works</span>
           <h2 className="display">A smarter layer around the <em>human work.</em></h2>
           <p>Technology makes the practice more present. People keep it personal, thoughtful, and grounded.</p>
         </div>
         <div className="steps" data-testid="list-how-it-works">
           {steps.map(({ icon: Icon, title, body }, index) => (
-            <article className="step reveal" key={title} data-testid={`card-step-${index + 1}`}>
+            <article className="step" key={title} data-testid={`card-step-${index + 1}`}>
               <span className="step-index">0{index + 1}</span>
               <Icon className="step-icon" size={23} strokeWidth={1.4} />
               <h3>{title}</h3>
@@ -221,7 +221,7 @@ function Roles() {
   return (
     <section className="section roles-section" data-testid="section-roles">
       <div className="container-wide roles-layout">
-        <div className="roles-sidebar reveal">
+        <div className="roles-sidebar">
           <span className="eyebrow">A place for every perspective</span>
           <div className="section-heading">
             <h2 className="display">Support that meets people <em>where they are.</em></h2>
@@ -234,7 +234,7 @@ function Roles() {
             ))}
           </div>
         </div>
-        <div className="role-panel reveal reveal-delay-1" role="tabpanel" data-testid={`panel-role-${role}`}>
+        <div className="role-panel" role="tabpanel" data-testid={`panel-role-${role}`}>
           <span className="role-tag">{active.label}</span>
           <h3 className="display">{active.title}</h3>
           <p>{active.copy}</p>
